@@ -1,0 +1,34 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Friends</h1> 
+<%= link_to "New friend", new_friend_path, class:"btn btn-success mb-3" %>
+
+<div id="friends">
+
+  <table class="table">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Name</th>
+      <th scope="col">Email</th>
+      <th scope="col">Phone</th>
+      <th scope="col">Tiktok</th>
+      <th scope="col" colspan="2"> Action  <i class="bi bi-gear-fill"></i> </th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @friends.each do |friend| %>
+      <tr>
+        <th scope="row"></th>
+        <td> <%= friend.first_name+" "+friend.last_name %>  </td>
+        <td> <%= friend.email %> </td>
+        <td> <%= friend.phone %> </td>
+        <td> <%= friend.tiktok %> </td>
+        <td> <%= link_to "Show", friend, class:"btn btn-primary text-center" %> <td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+</div>
+
+

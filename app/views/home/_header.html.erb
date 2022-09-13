@@ -1,0 +1,23 @@
+<nav class="navbar navbar-dark bg-dark navbar-expand-lg ">
+    <%= link_to 'Friend Apps', root_path, class:"navbar-brand" %>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+            <%= link_to 'Home', root_path, class:"nav-link" %>
+        </li>
+        <li class="nav-item">
+            <%= link_to 'About', home_about_path, class:"nav-link" %>
+        </li>
+        <li class="nav-item">
+            <%= link_to 'Friends', friends_path, class:"nav-link" %>
+        </li>
+        </ul>
+        <span class="navbar-text">
+        Muhamad Ridwan
+        </span>
+    </div>
+</nav>
